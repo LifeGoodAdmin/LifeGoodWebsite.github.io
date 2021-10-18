@@ -1,0 +1,392 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap");
+
+html {
+  background-color: #fff;
+}
+
+body {
+  font: 14px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.header-basic {
+  background-color: #2d312f;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+  padding: 12px 40px;
+  height: 160px;
+  box-sizing: border-box;
+}
+
+.header-basic .header-limiter {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Logo */
+
+.header-basic .header-limiter .logo {
+  float: center;
+  width: 300px;
+  padding: 6px;
+}
+
+/* The header links */
+
+.header-basic .header-limiter nav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 40px;
+}
+
+.header-basic .header-limiter nav a {
+  display: inline-block;
+  margin: 2px;
+  padding: 30px 16px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.header-basic .header-limiter nav a.selected {
+  color: #74e884;
+  opacity: 2;
+}
+
+/* For the headers to look good, be sure to reset the margin and padding of the body */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 80px;
+  padding: 5px;
+  column-count: 3;
+  column-width: 200px;
+  border-radius: 30px;
+}
+
+.container .info {
+  margin: 10px;
+  padding: 5px;
+}
+
+.container .info .titulo {
+  font-weight: bold;
+  margin: 5px 0 10px 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.container .info ul {
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.container .info .lechuga {
+  width: 348px;
+  margin: 5px;
+}
+
+.container .info .fresa {
+  width: 348px;
+  margin: 5px;
+}
+
+.container .info .mixto {
+  width: 348px;
+  margin: 5px;
+}
+
+.button:link,
+.button:visited {
+  background-color: #8ba201;
+  color: white;
+  padding: 20px 40px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.button:hover,
+.button:active {
+  background-color: #3d7a1c;
+}
+
+/* Making the header responsive */
+
+@media all and (max-width: 1280px) {
+  .container .info .titulo {
+    font-weight: bold;
+    margin: 5px 0 10px 0;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .container {
+    margin: 30px;
+    padding: 5px;
+  }
+
+  .container .info {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .container .info ul {
+    font-size: 14px;
+    padding: 30px;
+  }
+
+  .container .info .lechuga {
+    width: 300px;
+    margin: 5px;
+  }
+
+  .container .info .fresa {
+    width: 300px;
+    margin: 5px;
+  }
+
+  .container .info .mixto {
+    width: 300px;
+    margin: 5px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .container .info .titulo {
+    font-weight: bold;
+    margin: 5px 0 10px 0;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .container {
+    margin: 30px;
+    padding: 5px;
+  }
+
+  .container .info {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .container .info ul {
+    font-size: 14px;
+    padding: 30px;
+  }
+
+  .container .info .lechuga {
+    width: 240px;
+    margin: 5px;
+  }
+
+  .container .info .fresa {
+    width: 240px;
+    margin: 5px;
+  }
+
+  .container .info .mixto {
+    width: 240px;
+    margin: 5px;
+  }
+
+  .button:link,
+  .button:visited {
+    padding: 18px 35px;
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 870px) {
+  .header-basic {
+    padding: 21px 0;
+    height: 185px;
+  }
+
+  .header-basic .header-limiter .logo {
+    float: none;
+    margin: -8px 0 10px;
+    width: 260px;
+  }
+
+  .header-basic .header-limiter nav {
+    line-height: 1;
+    float: none;
+  }
+
+  .header-basic .header-limiter nav a {
+    font-size: 12px;
+  }
+
+  .container .info .titulo {
+    font-weight: bold;
+    margin: 5px 0 10px 0;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .container .info ul {
+    font-size: 12px;
+    padding: 30px;
+  }
+
+  .container .info .lechuga {
+    width: 190px;
+    margin: 5px;
+  }
+
+  .container .info .fresa {
+    width: 190px;
+    margin: 5px;
+  }
+
+  .container .info .mixto {
+    width: 190px;
+    margin: 5px;
+  }
+
+  .button:link,
+  .button:visited {
+    padding: 15px 20px;
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .header-basic {
+    padding: 21px 0;
+    height: 120px;
+  }
+
+  .header-basic .header-limiter .logo {
+    float: none;
+    margin: -8px 0 10px;
+    width: 200px;
+  }
+
+  .header-basic .header-limiter nav {
+    line-height: 1;
+    float: none;
+  }
+
+  .header-basic .header-limiter nav a {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .header-basic {
+    padding: 21px 0;
+    height: 185px;
+  }
+
+  .header-basic .header-limiter .logo {
+    float: none;
+    margin: -8px 0 10px;
+    width: 220px;
+  }
+
+  .header-basic .header-limiter nav {
+    line-height: 1;
+    float: none;
+  }
+
+  .header-basic .header-limiter nav a {
+    font-size: 12px;
+  }
+
+  .container {
+    margin: 40px;
+    padding: 20px;
+    column-width: 240px;
+  }
+
+  .container .info {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .container .info .titulo {
+    font-weight: bold;
+    margin: 5px 0 10px 0;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .container .info ul {
+    font-size: 16px;
+    padding: 30px;
+  }
+
+  .container .info .lechuga {
+    width: 348px;
+    margin: 2px;
+  }
+
+  .container .info .fresa {
+    width: 348px;
+    margin: 5px;
+  }
+
+  .container .info .mixto {
+    width: 348px;
+    margin: 5px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .header-basic {
+    padding: 21px 0;
+    height: 185px;
+  }
+
+  .header-basic .header-limiter .logo {
+    float: none;
+    margin: -8px 0 10px;
+    width: 220px;
+  }
+
+  .header-basic .header-limiter nav {
+    line-height: 1;
+    float: none;
+  }
+
+  .header-basic .header-limiter nav a {
+    font-size: 10px;
+  }
+
+  .container .info .titulo {
+    font-weight: bold;
+    margin: 5px 0 10px 0;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .container .info ul {
+    font-size: 16px;
+    padding: 30px;
+  }
+
+  .container .info .lechuga {
+    width: 240px;
+    margin: 2px;
+  }
+
+  .container .info .fresa {
+    width: 240px;
+    margin: 5px;
+  }
+
+  .container .info .mixto {
+    width: 240px;
+    margin: 5px;
+  }
+}
